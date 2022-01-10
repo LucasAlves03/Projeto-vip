@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="projetovip.js"></script>
+    <title>Acesso Festa vip</title>
+    <style>
+        
+        body{
+            background: url(party.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            backdrop-filter: blur(5px);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container{
+            background-color: rgba(255, 255, 255, 0.767);
+            backdrop-filter: blur(10px) ;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 6%;
+        }
+        .container > h1 {
+            background-color: rgba(0, 0, 0, 0.658);
+            padding: 5px;
+            border-radius: 3px 3px 3px 3px;
+            color: rgba(255, 255, 255, 0.74);
+           
+        }
+        .container > h1:hover{
+            animation: wobble;
+            animation-duration: 3s;
+        }
+       
+        .container> input[type="text" i]{
+            width: 300px;
+            height: 30px;
+            text-align: center;
+            border-radius: 5px 5px 5px 5px;
+            font-size: 12pt;
+            border: 2px solid rgb(204, 0, 255);
+            
+        }
+        .container > input[type="button"]{
+            background-color: rgba(69, 73, 82, 0.685);
+            width: 200px;
+            padding: 10px;
+            margin-top: 20px;
+            color: rgb(211, 206, 206);
+            box-shadow: 3px 5px 9px 2px rgba(0, 0, 0, 0.322);
+            border-radius: 10px 10px 10px 10px;
+            font-size: 14pt;
+        }
+        .container > p{
+            font-size: 15pt;
+        }
+        #dev{
+            font: bolder 14pt arial;
+            margin-top: 55px;
+            padding: 10px;
+            background-color: rgba(252, 247, 247, 0.363);
+            color: rgb(2, 0, 0);
+            text-align: center;
+            border-radius: 10px 10px 10px 10px;
+        }
+        #dev > a{
+            color: blue;
+            text-decoration: none;
+        }
+        #dev > a:hover{
+            color: rgb(75, 22, 175);
+            text-decoration: 2px underline white;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>FESTA VIP</h1>
+        <h2>Bem vindo a festa senhor(a): </h2>
+        <input type="text" name="txtNome" id="txtNome" placeholder="Digite seu nome" maxlength="8">
+        <h2>Quem te convidou para essa festa?</h2>
+        <input type="text" name="txtConvidou" id="txtConvidou" placeholder="Quem te convidou?" maxlength="5">
+        <input type="button" value="Verificar Acesso" onclick="Verificar()">
+        <h2>Você está permitido a entrar?</h2>
+        <p id="res">Pesquisando......</p>
+    </div>
+    <h1 id="dev">Desenvolvido por Lucas Alves durante o curso de js do canal <a href="https://www.youtube.com/watch?v=i6Oi-YtXnAU" target="_blank">Dev Aprender</a></h1>
+   
+</body>
+</html>
